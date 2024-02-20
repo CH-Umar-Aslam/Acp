@@ -1,1 +1,17 @@
 
+public class Main
+{
+    public class Account{
+     public  static void withdraw(String val ) 
+      {
+        System.out.println(val);
+    }
+        
+    }
+	public static void main(String[] args) {
+		
+	   Account obj = new Account();
+	   obj.withdraw("hello");
+	    
+	}
+}
