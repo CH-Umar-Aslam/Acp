@@ -1,4 +1,6 @@
-
+---------------------------------------------------------------------------------------------------------------------
+#Task1
+---------------------------------------------------------------------------------------------------------------------
 public class Main
 {
     public class Account{
@@ -15,3 +17,42 @@ public class Main
 	    
 	}
 }
+
+---------------------------------------------------------------------------------------------------------------------
+#Task2
+---------------------------------------------------------------------------------------------------------------------
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Customer {
+    public String name;
+    public String email;
+    ArrayList<product> myList = new ArrayList<>();
+
+    public Customer(String n, String e){
+        this.name = n;
+        this.email = e;
+
+    }
+
+    public void add_to_cart(product p){
+    myList.add(p);
+
+    }
+    public void del_to_cart(product p) {
+        for(product element: myList){
+            if (element.name = product.name){
+                element.remove();
+            }
+        }
+
+
+        }
+    public int display_ammount(){
+        int sum;
+        for(product element: myList){
+            sum=element.price+sum;
+
+        }
+    }
+    }
